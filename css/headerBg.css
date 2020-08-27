@@ -2,15 +2,15 @@
     position: relative;
     width: 100%;
     background: #111;
-    /* overflow: hidden; */
-    background-size: cover;
-    /* background-position: center center; */
     z-index: 1;
 }
 
-.demo .large-header {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
-    /* background-image: url("../images/headerBg4.jpg"); */
+.container .large-header {
+    /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg") no-repeat center center fixed; */
+    background: url("../images/header3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -18,27 +18,73 @@
     position: absolute;
     margin: 0;
     padding: 0;
+    width: 100%;
     color: #F9F1E9;
     text-align: center;
     top: 50%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.demo .main-title {
+.container .main-title {
     /* text-transform: uppercase; */
     font-size: 5em;
+    font-weight: 500;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    cursor: default;
 }
 
-.main-title .thin {
-    font-weight: 200;
+#name {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/*********button***********/
+
+#headerBtn {
+    margin-top: 3rem;
+    padding: 1rem 2.5rem;
+    font-size: 2.5rem;
+    background: transparent;
+    border: 2px solid #F9F1E9;
+    color: #F9F1E9;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#headerBtn:hover {
+    background-color: #44bccc;
+    border: 2px solid #44bccc;
+}
+
+#arrow {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+#headerBtn:hover #arrow {
+    transform: rotate(90deg);
 }
 
 @media only screen and (max-width: 768px) {
     .demo .main-title {
         font-size: 3em;
     }
+}
+
+/*****sakriti scrollbar*****/
+
+::-webkit-scrollbar {
+    display: none;
 }
