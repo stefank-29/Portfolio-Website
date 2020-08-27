@@ -17,7 +17,7 @@ body {
     /* background-size: cover; */
 }
 
-#page-container {
+.container {
     position: relative;
     min-height: calc(100vh + 3.6rem);
     min-width: 100vw;
@@ -28,26 +28,6 @@ body {
     position: absolute;
     padding-bottom: 3.5rem;
 }
-
-/*********header***********/
-
-#header {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#header h1 {
-    color: whitesmoke;
-    /* margin-top: -20rem; */
-}
-
-#headerBtn {}
 
 /**************footer*****************/
 
@@ -65,6 +45,7 @@ footer div {
     color: rgb(255, 255, 255);
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 /*rgba(39, 131, 236, 0.3);*/
