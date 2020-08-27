@@ -43,12 +43,14 @@
 .main-title p {
     padding: 0;
     margin: 0;
+    animation: fadeIn 0.5s ease-in-out 1 normal forwards;
 }
 
 #name {
     display: inline;
     margin: 0;
     padding: 0;
+    /* color: #e31b6d; */
     color: #44bccc;
     font-weight: 600;
 }
@@ -68,6 +70,7 @@
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     outline: none;
+    animation: btnFadeIn 1s ease-in-out 1 normal forwards;
 }
 
 #headerBtn:hover {
@@ -78,12 +81,38 @@
 #arrow {
     font-size: 2rem;
     margin-left: 0.5rem;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 #headerBtn:hover #arrow {
     transform: rotate(90deg);
 }
+
+/*********key-frames***************/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes btnFadeIn {
+    0% {
+        opacity: 0.7;
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/************media******************/
 
 @media only screen and (max-width: 768px) {
     .demo .main-title {
