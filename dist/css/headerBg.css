@@ -40,10 +40,17 @@
     cursor: default;
 }
 
+.main-title p {
+    padding: 0;
+    margin: 0;
+}
+
 #name {
     display: inline;
     margin: 0;
     padding: 0;
+    color: #44bccc;
+    font-weight: 600;
 }
 
 /*********button***********/
@@ -60,6 +67,7 @@
     letter-spacing: 0.05em;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    outline: none;
 }
 
 #headerBtn:hover {
