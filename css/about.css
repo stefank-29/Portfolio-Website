@@ -1,5 +1,19 @@
 #about {
-    position: relative;
-    width: 100%;
-    height: calc(100Vh + 3.6rem);
+	position: relative;
+	overflow: hidden;
+	width: 60%;
+	height: 100vh;
+	margin: 0 auto;
+}
+.section-header {
+	position: relative;
+	margin-top: 5rem;
+	width: 100%;
+	left: 0rem;
+	right: 0rem;
+	text-align: center;
+	/* background-color: red; */
+	font-family: 'Alata', sans-serif;
+	font-size: 4rem;
+	color: #ecf4f5;
 }
