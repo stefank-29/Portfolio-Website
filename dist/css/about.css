@@ -7,13 +7,22 @@
 }
 .section-header {
 	position: relative;
-	margin-top: 5rem;
+	margin: 5rem 0 2rem;
 	width: 100%;
-	left: 0rem;
-	right: 0rem;
 	text-align: center;
 	/* background-color: red; */
 	font-family: 'Alata', sans-serif;
 	font-size: 4rem;
 	color: #ecf4f5;
+}
+p#dots {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	color: #ecf4f5;
+}
+p#dots * {
+	margin-right: 0.5rem;
 }
