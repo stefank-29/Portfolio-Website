@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/headerBg.css" />
 		<link rel="stylesheet" href="./css/scrollDownIcon.css" />
+		<link rel="stylesheet" href="./css/about.css" />
 
 		<link rel="icon" type="image/png" href="./images/favicon-16x16.png" />
 		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
@@ -22,17 +23,23 @@
 	<body>
 		<div class="container">
 			<div class="content">
+				<!----------- header -------------->
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
 					<h1 class="main-title">
 						<p>Hello, I'm <span id="name">Stefan Karaferovic</span>.</p>
 						<p>I'm a front-end web developer.</p>
-						<button id="headerBtn">
-							View my work <i id="arrow" class="fas fa-arrow-right"></i>
-						</button>
+						<!-- mozda ne about nego projects -->
+						<a href="#about"
+							><button id="headerBtn">
+								View my work <i id="arrow" class="fas fa-arrow-right"></i>
+							</button>
+						</a>
 					</h1>
-					<a id="scroll" href="#"><span></span><span></span><span></span></a>
+					<a id="scroll" href="#about"><span></span><span></span><span></span></a>
 				</div>
+				<!----------- about ---------------->
+				<div id="about"></div>
 			</div>
 			<footer>
 				<div>
