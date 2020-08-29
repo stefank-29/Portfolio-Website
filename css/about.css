@@ -50,9 +50,26 @@ p#dots * {
 }
 
 #shell-terminal {
-	padding: 1rem;
+	padding: 1rem 1.5rem;
 	margin: 4rem auto;
 	width: 90%;
 	height: 30rem;
 	background-color: #232323;
+}
+#shell-session {
+	color: #9bef9b;
+	font-size: 2.2rem;
+	font-family: 'Menlo';
+	line-height: 3.3rem;
+}
+#shell-name {
+	color: rgb(230, 173, 88);
+}
+/*************font************/
+@font-face {
+	font-family: 'Menlo';
+	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'),
+		url('/webfontkit/menlo-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
