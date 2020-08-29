@@ -3,7 +3,11 @@
 
 module.exports = {
 	mode: 'development',
-	entry: {app: './src/index.js', particles: './src/particles.js'},
+	entry: {
+		app: './src/index.js',
+		particles: './src/particles.js',
+		shell: './src/shellSessionAnimation.js',
+	},
 	output: {
 		filename: '[name].bundle.js',
 		publicPath: 'dist',
