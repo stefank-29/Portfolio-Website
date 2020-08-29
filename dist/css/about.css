@@ -65,6 +65,9 @@ p#dots * {
 #shell-name {
 	color: rgb(230, 173, 88);
 }
+#shell-text {
+	display: inline;
+}
 /*************font************/
 @font-face {
 	font-family: 'Menlo';
