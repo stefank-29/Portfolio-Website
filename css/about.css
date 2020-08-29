@@ -48,12 +48,12 @@ p#dots * {
 .logo {
 	color: #ecf4f5;
 }
-
+/**********shell**************/
 #shell-terminal {
 	padding: 1rem 1.5rem;
-	margin: 4rem auto;
+	margin: 2rem auto 3rem;
 	width: 90%;
-	height: 30rem;
+	height: 27rem;
 	background-color: #232323;
 }
 #shell-session {
@@ -67,6 +67,22 @@ p#dots * {
 }
 #shell-text {
 	display: inline;
+}
+/**********logos**************/
+#logos {
+	margin: 2rem auto 1.5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logoIcon {
+	width: 5rem;
+	height: 5rem;
+	margin: 0 0.7rem;
+}
+#css3 {
+	transform: scale(1.26);
 }
 /*************font************/
 @font-face {
