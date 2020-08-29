@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/shellSessionAnimation.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -105,18 +105,6 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {!function(e,t){ true?module.
 /***/ (function(module, exports) {
 
 eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || new Function(\"return this\")();\n} catch (e) {\n\t// This works if the window reference is available\n\tif (typeof window === \"object\") g = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n\n\n//# sourceURL=webpack:///(webpack)/buildin/global.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shellSessionAnimation */ \"./src/shellSessionAnimation.js\");\n\nparticlesJS.load('particles-js', './particles.json', function () {\n  console.log('callback - particles.js config loaded');\n});\nwindow.onload = _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__[\"shellAnimation\"].insertLetter();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
