@@ -2,7 +2,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 60%;
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0 auto;
 }
 .section-header {
@@ -25,4 +25,34 @@ p#dots {
 }
 p#dots * {
 	margin-right: 0.5rem;
+}
+.sub-header {
+	position: relative;
+	margin: 3rem auto 2rem;
+	width: 100%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.05em;
+	color: #e31b36;
+	font-size: 3rem;
+}
+.about-p {
+	width: 90%;
+	margin: 1rem auto 2rem;
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	color: #ecf4f5;
+	line-height: 3rem;
+}
+.logo {
+	color: #ecf4f5;
+}
+
+#shell-terminal {
+	padding: 1rem;
+	margin: 4rem auto;
+	width: 90%;
+	height: 30rem;
+	background-color: #232323;
 }

@@ -9,7 +9,9 @@ canvas {
 	position: absolute;
 	width: 100%;
 	height: calc(100vh + 3.7rem);
-	background-color: #232741;
+	/* background-color: #232741; */
+	background-color: #171a2e;
+
 	/* z-index: 10; */
 	/* background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png');
 	background-repeat: no-repeat;
