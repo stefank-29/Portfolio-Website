@@ -15,6 +15,7 @@
 	font-size: 4rem;
 	color: #ecf4f5;
 }
+/********dots***********/
 p#dots {
 	width: 100%;
 	text-align: center;
@@ -48,6 +49,19 @@ p#dots * {
 .logo {
 	color: #ecf4f5;
 }
+/**********image*************/
+#image-div {
+	width: 100%;
+	margin: 4rem auto 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#my-image {
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+}
 /**********shell**************/
 #shell-terminal {
 	padding: 1rem 1.5rem;
@@ -55,7 +69,12 @@ p#dots * {
 	width: 90%;
 	height: 27rem;
 	background-color: #232323;
+	overflow: auto;
 }
+#shell-terminal::-webkit-scrollbar {
+	width: 1rem;
+}
+
 #shell-session {
 	color: #9bef9b;
 	font-size: 2.2rem;
@@ -83,6 +102,9 @@ p#dots * {
 }
 #css3 {
 	transform: scale(1.26);
+}
+#react {
+	transform: scale(1.5);
 }
 /*************font************/
 @font-face {
