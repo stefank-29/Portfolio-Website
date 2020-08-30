@@ -116,7 +116,19 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shellSessionAnimation */ \"./src/shellSessionAnimation.js\");\n\nparticlesJS.load('particles-js', './particles.json', function () {\n  console.log('callback - particles.js config loaded');\n});\nwindow.onload = _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__[\"shellAnimation\"].insertLetter();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shellSessionAnimation */ \"./src/shellSessionAnimation.js\");\n/* harmony import */ var _scrollToDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scrollToDom */ \"./src/scrollToDom.js\");\n\n\nparticlesJS.load('particles-js', './particles.json', function () {\n  console.log('callback - particles.js config loaded');\n});\nwindow.onload = _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__[\"shellAnimation\"].insertLetter();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/scrollToDom.js":
+/*!****************************!*\
+  !*** ./src/scrollToDom.js ***!
+  \****************************/
+/*! exports provided: scrollToDom */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"scrollToDom\", function() { return scrollToDom; });\nvar scrollToDom = function () {\n  function scroll() {\n    document.querySelector('#about').scrollIntoView({\n      behavior: 'smooth'\n    });\n  }\n\n  return {\n    scroll: scroll\n  };\n}();\n\nvar headerBtn = document.querySelector('#headerBtn');\nheaderBtn.addEventListener('click', scrollToDom.scroll);\n\n\n//# sourceURL=webpack:///./src/scrollToDom.js?");
 
 /***/ }),
 
@@ -128,7 +140,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _she
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shellAnimation\", function() { return shellAnimation; });\n/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prettier */ \"./node_modules/prettier/standalone.js\");\n/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prettier__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar shellAnimation = function () {\n  var shell = document.querySelector('#shell-text');\n  var text = \"I am skilled with web development languages such as JavaScript, CSS3 and HTML5.\\n\\tCurrently I'm improving my knowledge of React framework. I have experience working with \\n\\tobject-oriented programming languages such as Java and C++,\\n\\tdatabases(SQL, MS SQL, LiveSQL), and industry tools such as (Webpack, Git, Github, ESLint).\";\n  var textArray = text.split('');\n  var timer;\n\n  function insertLetter() {\n    if (textArray.length > 0) {\n      if (textArray[0] === ' ') {\n        shell.textContent += textArray.shift();\n      }\n\n      shell.textContent += textArray.shift();\n    } else {\n      clearTimeout(timer);\n    }\n\n    timer = setTimeout(insertLetter, 25);\n  }\n\n  return {\n    insertLetter: insertLetter\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/shellSessionAnimation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shellAnimation\", function() { return shellAnimation; });\n/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prettier */ \"./node_modules/prettier/standalone.js\");\n/* harmony import */ var prettier__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prettier__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar shellAnimation = function () {\n  var shell = document.querySelector('#shell-text');\n  var text = \"I am skilled with web development languages such as JavaScript, CSS3 and HTML5.\\n\\tCurrently I'm improving my knowledge of React framework. I have experience working with \\n\\tobject-oriented programming languages such as Java and C++,\\n\\tdatabases (SQL, MS SQL, LiveSQL), and industry tools such as (Webpack, Git, Github, ESLint).\";\n  var textArray = text.split('');\n  var timer;\n\n  function insertLetter() {\n    if (textArray.length > 0) {\n      if (textArray[0] === ' ') {\n        shell.textContent += textArray.shift();\n      }\n\n      shell.textContent += textArray.shift();\n    } else {\n      clearTimeout(timer);\n    }\n\n    timer = setTimeout(insertLetter, 25);\n  }\n\n  return {\n    insertLetter: insertLetter\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/shellSessionAnimation.js?");
 
 /***/ })
 

@@ -4,6 +4,7 @@
 	width: 60%;
 	min-height: 100vh;
 	margin: 0 auto;
+	scroll-behavior: smooth;
 }
 .section-header {
 	position: relative;
@@ -61,6 +62,7 @@ p#dots * {
 	height: 20rem;
 	width: 20rem;
 	border-radius: 50%;
+	box-shadow: 0 0 5px 1px rgba(100, 0, 0, 0.7);
 }
 /**********shell**************/
 #shell-terminal {
