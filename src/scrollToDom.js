@@ -9,5 +9,6 @@ const scrollToDom = (() => {
 })();
 const headerBtn = document.querySelector('#headerBtn');
 headerBtn.addEventListener('click', scrollToDom.scroll);
-
+const scrollArrows = document.querySelector('#scroll');
+scrollArrows.addEventListener('click', scrollToDom.scroll);
 export {scrollToDom};
