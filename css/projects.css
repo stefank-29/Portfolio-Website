@@ -17,7 +17,7 @@
 }
 /************project*************/
 .project {
-	height: 25rem;
+	height: 30rem;
 	width: 100%;
 	margin: 1rem auto 4rem;
 	background-color: lavender;
@@ -27,11 +27,22 @@
 }
 .project-image {
 	height: 100%;
-	width: 30%;
+	width: 35%;
 	background-color: rgb(214, 127, 156);
 }
 .project-desc {
 	height: 100%;
 	width: 60%;
 	background-color: rgb(74, 160, 182);
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.project .header {
+	font-size: 3rem;
+	font-family: 'Raleway', sans-serif;
+	color: #ecf4f5;
+	margin: 0 1rem;
+	padding: 1rem 0rem 0.5rem;
+	border-bottom: 2px solid #ecf4f5;
 }
