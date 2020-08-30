@@ -20,7 +20,7 @@
 	min-height: 35rem;
 	width: 100%;
 	margin: 1rem auto 4rem;
-	background-color: lavender;
+	/* background-color: lavender; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -34,7 +34,7 @@
 .project-desc {
 	min-height: inherit;
 	width: 60%;
-	background-color: rgb(74, 160, 182);
+	/* background-color: rgb(74, 160, 182); */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -66,18 +66,21 @@
 	margin: 0.5rem 1rem;
 }
 .links button {
-	padding: 0.5rem 1rem;
+	padding: 1rem 1.5rem;
 	margin-right: 1.5rem;
-	font-size: 1.7rem;
+	font-size: 2rem;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 	color: #ecf4f5;
 	background-color: transparent;
 	border: 1px solid #ecf4f5;
 	outline: none;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
 }
 .links button:hover {
 	background-color: #44bccc;
+	border: 1px solid #44bccc;
 }
 .links #logo {
 	font-size: 2rem;
