@@ -9,6 +9,7 @@ const shellAnimation = (() => {
 	const textArray = text.split('');
 	let timer;
 	function insertLetter() {
+		console.log('a');
 		if (textArray.length > 0) {
 			if (textArray[0] === ' ') {
 				shell.textContent += textArray.shift();
@@ -16,8 +17,9 @@ const shellAnimation = (() => {
 			shell.textContent += textArray.shift();
 		} else {
 			clearTimeout(timer);
+			return;
 		}
-		timer = setTimeout(insertLetter, 25);
+		timer = setTimeout(insertLetter, 15);
 	}
 	return {
 		insertLetter,

@@ -10,5 +10,7 @@ canvas {
 	width: 100%;
 	height: calc(200vh + 3.7rem); /* podesiti koliko treba da bude minimalna visina*/
 	background-color: #171a2e;
+	/* background-color: #ece8e6; */
 	/* background-color: #232741; */
+	/* background-color: #171a2e; ovo je pozadina */
 }
