@@ -6,3 +6,32 @@
 	margin: 3rem auto 0;
 	/* background-color: red; */
 }
+#about-projects {
+	width: 90%;
+	margin: 2rem auto 4rem;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	color: #ecf4f5;
+	line-height: 3rem;
+}
+/************project*************/
+.project {
+	height: 25rem;
+	width: 100%;
+	margin: 1rem auto 4rem;
+	background-color: lavender;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.project-image {
+	height: 100%;
+	width: 30%;
+	background-color: rgb(214, 127, 156);
+}
+.project-desc {
+	height: 100%;
+	width: 60%;
+	background-color: rgb(74, 160, 182);
+}
