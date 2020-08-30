@@ -7,6 +7,7 @@ module.exports = {
 		app: './src/index.js',
 		particles: './src/particles.js',
 		shell: './src/shellSessionAnimation.js',
+		scroll: './src/scrollToDom.js',
 	},
 	output: {
 		filename: '[name].bundle.js',
