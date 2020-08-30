@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"scrollToDom\", function() { return scrollToDom; });\nvar scrollToDom = function () {\n  function scroll() {\n    document.querySelector('#about').scrollIntoView({\n      behavior: 'smooth'\n    });\n  }\n\n  return {\n    scroll: scroll\n  };\n}();\n\nvar headerBtn = document.querySelector('#headerBtn');\nheaderBtn.addEventListener('click', scrollToDom.scroll);\n\n\n//# sourceURL=webpack:///./src/scrollToDom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"scrollToDom\", function() { return scrollToDom; });\nvar scrollToDom = function () {\n  function scroll() {\n    document.querySelector('#about').scrollIntoView({\n      behavior: 'smooth'\n    });\n  }\n\n  return {\n    scroll: scroll\n  };\n}();\n\nvar headerBtn = document.querySelector('#headerBtn');\nheaderBtn.addEventListener('click', scrollToDom.scroll);\nvar scrollArrows = document.querySelector('#scroll');\nscrollArrows.addEventListener('click', scrollToDom.scroll);\n\n\n//# sourceURL=webpack:///./src/scrollToDom.js?");
 
 /***/ })
 
