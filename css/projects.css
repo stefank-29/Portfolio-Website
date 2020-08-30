@@ -1,0 +1,8 @@
+#projects {
+	position: relative;
+	overflow: hidden;
+	width: 60%;
+	min-height: 100vh;
+	margin: 3rem auto 0;
+	/* background-color: red; */
+}

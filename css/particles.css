@@ -8,7 +8,7 @@ canvas {
 #particles-js {
 	position: absolute;
 	width: 100%;
-	height: calc(200vh + 3.7rem); /* podesiti koliko treba da bude minimalna visina*/
+	height: calc(300vh + 3.7rem); /* podesiti koliko treba da bude minimalna visina*/
 	background-color: #171a2e;
 	/* background-color: #ece8e6; */
 	/* background-color: #232741; */
