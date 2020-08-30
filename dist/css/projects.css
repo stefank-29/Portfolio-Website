@@ -1,7 +1,7 @@
 #projects {
 	position: relative;
 	overflow: hidden;
-	width: 60%;
+	width: 70%;
 	min-height: 100vh;
 	margin: 3rem auto 0;
 	/* background-color: red; */
@@ -17,7 +17,7 @@
 }
 /************project*************/
 .project {
-	height: 30rem;
+	min-height: 35rem;
 	width: 100%;
 	margin: 1rem auto 4rem;
 	background-color: lavender;
@@ -26,12 +26,13 @@
 	justify-content: space-between;
 }
 .project-image {
-	height: 100%;
+	min-height: inherit; /***za maksimalnu visinu***/
+	z-index: 2;
 	width: 35%;
 	background-color: rgb(214, 127, 156);
 }
 .project-desc {
-	height: 100%;
+	min-height: inherit;
 	width: 60%;
 	background-color: rgb(74, 160, 182);
 	display: flex;
@@ -40,7 +41,7 @@
 	align-items: flex-start;
 }
 .project-desc .header {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-family: 'Alata', sans-serif;
 	color: #ecf4f5;
 	margin: 0 1rem;
@@ -51,7 +52,7 @@
 	width: 100%;
 	margin: 2rem 0rem;
 	padding: 0 1rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-family: 'Raleway', sans-serif;
 	color: #ecf4f5;
 }
@@ -67,7 +68,7 @@
 .links button {
 	padding: 0.5rem 1rem;
 	margin-right: 1.5rem;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-family: 'Raleway', sans-serif;
 	color: #ecf4f5;
 	background-color: transparent;
@@ -77,4 +78,7 @@
 }
 .links button:hover {
 	background-color: #44bccc;
+}
+.links #logo {
+	font-size: 2rem;
 }
