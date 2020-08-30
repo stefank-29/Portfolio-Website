@@ -17,7 +17,8 @@
 	color: #ecf4f5;
 }
 /********dots***********/
-p#dots {
+p.dots {
+	position: relative;
 	width: 100%;
 	text-align: center;
 	margin: 0;
@@ -25,7 +26,7 @@ p#dots {
 	font-size: 1rem;
 	color: #ecf4f5;
 }
-p#dots * {
+p.dots * {
 	margin-right: 0.5rem;
 }
 .sub-header {
