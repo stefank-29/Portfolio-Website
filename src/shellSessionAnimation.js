@@ -1,5 +1,3 @@
-import TypeIt from 'typeit';
-
 const shellAnimation = (() => {
 	const shell = document.querySelector('#shell-text');
 	const text = `I am skilled with web development languages such as JavaScript, CSS3 and HTML5.
@@ -10,21 +8,16 @@ const shellAnimation = (() => {
 	let timer;
 	function insertLetter() {
 		//console.log('a');
-		// if (textArray.length > 0) {
-		// 	if (textArray[0] === ' ') {
-		// 		shell.textContent += textArray.shift();
-		// 	}
-		// 	shell.textContent += textArray.shift();
-		// } else {
-		// 	clearTimeout(timer);
-		// 	return;
-		// }
-		// timer = setTimeout(insertLetter, 1);
-		new TypeIt('#simpleUsage', {
-			strings: 'This is a simple string.',
-			speed: 5,
-			waitUntilVisible: true,
-		}).go();
+		if (textArray.length > 0) {
+			if (textArray[0] === ' ') {
+				shell.textContent += textArray.shift();
+			}
+			shell.textContent += textArray.shift();
+		} else {
+			clearTimeout(timer);
+			return;
+		}
+		timer = setTimeout(insertLetter, 10);
 	}
 	return {
 		insertLetter,
