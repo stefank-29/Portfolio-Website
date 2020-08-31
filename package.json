@@ -23,6 +23,7 @@
     "css-loader": "^4.2.2",
     "file-loader": "^6.0.0",
     "particles.js": "^2.0.0",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "typeit": "^7.0.4"
   }
 }
