@@ -27,6 +27,7 @@
 	align-items: center;
 	justify-content: center;
 	border: 1px solid #ecf4f5;
+	border-radius: 3px;
 }
 
 /************image*************/
@@ -37,13 +38,12 @@
 	margin: 3rem auto;
 	/***za maksimalnu visinu***/
 	width: 33%;
-	min-width: 42rem;
+	min-width: 50rem;
 	background-color: rgb(214, 127, 156);
 	display: flex;
 }
 
 .project-image .image {
-	background-color: blue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
