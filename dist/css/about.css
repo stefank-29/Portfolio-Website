@@ -1,11 +1,12 @@
 #about {
 	position: relative;
 	overflow: hidden;
-	width: 65%;
+	width: 60%;
 	min-height: 100vh;
 	margin: 0 auto;
 	scroll-behavior: smooth;
 }
+
 .section-header {
 	position: relative;
 	margin: 5rem 0 2rem;
@@ -16,7 +17,9 @@
 	font-size: 4rem;
 	color: #ecf4f5;
 }
+
 /********dots***********/
+
 p.dots {
 	position: relative;
 	width: 100%;
@@ -26,9 +29,11 @@ p.dots {
 	font-size: 1rem;
 	color: #ecf4f5;
 }
+
 p.dots * {
 	margin-right: 0.5rem;
 }
+
 .sub-header {
 	position: relative;
 	margin: 3rem auto 2rem;
@@ -39,6 +44,7 @@ p.dots * {
 	color: #e31b36;
 	font-size: 3rem;
 }
+
 .about-p {
 	width: 90%;
 	margin: 1rem auto 2rem;
@@ -48,14 +54,18 @@ p.dots * {
 	color: #ecf4f5;
 	line-height: 3rem;
 }
+
 .logo {
 	color: #ecf4f5;
 	font-size: 2.3rem;
 }
+
 .logo:hover {
 	color: #44bccc;
 }
+
 /**********image*************/
+
 #image-div {
 	width: 100%;
 	margin: 4rem auto 3rem;
@@ -63,13 +73,16 @@ p.dots * {
 	align-items: center;
 	justify-content: center;
 }
+
 #my-image {
 	height: 20rem;
 	width: 20rem;
 	border-radius: 50%;
 	box-shadow: 0 0 5px 1px rgba(100, 0, 0, 0.7);
 }
+
 /**********shell**************/
+
 #shell-terminal {
 	padding: 1rem 1.5rem;
 	margin: 2rem auto 3rem;
@@ -78,6 +91,7 @@ p.dots * {
 	background-color: #232323;
 	overflow: auto;
 }
+
 #shell-terminal::-webkit-scrollbar {
 	width: 1rem;
 }
@@ -88,13 +102,17 @@ p.dots * {
 	font-family: 'Menlo';
 	line-height: 3.3rem;
 }
+
 #shell-name {
 	color: rgb(230, 173, 88);
 }
+
 #shell-text {
 	display: inline;
 }
+
 /**********logos**************/
+
 #logos {
 	margin: 2rem auto 1.5rem;
 	width: 100%;
@@ -102,22 +120,26 @@ p.dots * {
 	align-items: center;
 	justify-content: center;
 }
+
 .logoIcon {
 	width: 5rem;
 	height: 5rem;
 	margin: 0 0.7rem;
 }
+
 #css3 {
 	transform: scale(1.26);
 }
+
 #react {
 	transform: scale(1.5);
 }
+
 /*************font************/
+
 @font-face {
 	font-family: 'Menlo';
-	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'),
-		url('/webfontkit/menlo-regular-webfont.woff') format('woff');
+	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'), url('/webfontkit/menlo-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
