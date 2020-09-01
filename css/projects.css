@@ -39,7 +39,7 @@
 	/***za maksimalnu visinu***/
 	width: 33%;
 	min-width: 50rem;
-	background-color: rgb(214, 127, 156);
+	/* background-color: rgb(214, 127, 156); */
 	display: flex;
 }
 
