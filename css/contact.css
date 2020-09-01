@@ -14,12 +14,50 @@
 
 #contact p.about {
 	position: relative;
-
 	width: 100%;
-	margin: 2rem auto 4rem;
+	margin: 2rem auto;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2rem;
 	color: #ecf4f5;
-	z-index: 10;
+	line-height: 3.5rem;
+}
+
+.form {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.form label {
+	font-size: 2rem;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin: 1rem auto 0rem;
+	color: #ecf4f5;
+}
+.form .star {
+	color: rgb(207, 35, 35);
+	font-size: 3rem;
+}
+.form input,
+.form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1.2rem;
+	border-radius: 5px;
+	font-size: 1.7rem;
+	font-family: 'Raleway', sans-serif;
+	border: none;
+	outline: none;
+	margin: 0.5rem auto;
+}
+.form input:focus,
+.form textarea:focus {
+	box-shadow: 0 0 5px 2px #44bccc;
+}
+
+form textarea {
+	resize: none;
 }
