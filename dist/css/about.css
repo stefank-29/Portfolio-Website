@@ -1,7 +1,7 @@
 #about {
 	position: relative;
 	overflow: hidden;
-	width: 55%;
+	width: 65%;
 	min-height: 100vh;
 	margin: 0 auto;
 	scroll-behavior: smooth;
@@ -139,7 +139,8 @@ p.dots * {
 
 @font-face {
 	font-family: 'Menlo';
-	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'), url('/webfontkit/menlo-regular-webfont.woff') format('woff');
+	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'),
+		url('/webfontkit/menlo-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
