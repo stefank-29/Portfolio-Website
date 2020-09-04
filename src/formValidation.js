@@ -47,7 +47,8 @@ const formValidation = (() => {
 		if (name.value === '') {
 			errMesage.textContent = 'This field is required.';
 			_setIconAndInputInvalid(icon, nameDiv);
-			return;
+		} else {
+			_setIconAndInputValid(icon, nameDiv);
 		}
 	}
 	function checkMessage() {
