@@ -24,28 +24,28 @@ const formValidation = (() => {
 
 	function checkEmail() {
 		const icon = email.parentNode.querySelector('i');
-		const errMesage = email.parentNode.querySelector('.error');
+		const errMessage = email.parentNode.querySelector('.error');
 		const emailDiv = email.parentNode;
 		const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 		if (email.value === '') {
-			errMesage.textContent = 'This field is required.';
+			errMessage.textContent = 'This field is required.';
 			_setIconAndInputInvalid(icon, emailDiv);
 			return;
 		}
 		if (reg.test(String(email.value).toLowerCase())) {
 			_setIconAndInputValid(icon, emailDiv);
 		} else {
-			errMesage.textContent = 'Please enter a valid email address.';
+			errMessage.textContent = 'Please enter a valid email address.';
 			_setIconAndInputInvalid(icon, emailDiv);
 		}
 	}
 	function checkName() {
 		const icon = name.parentNode.querySelector('i');
-		const errMesage = name.parentNode.querySelector('.error');
+		const errMessage = name.parentNode.querySelector('.error');
 		const nameDiv = name.parentNode;
 		if (name.value === '') {
-			errMesage.textContent = 'This field is required.';
+			errMessage.textContent = 'This field is required.';
 			_setIconAndInputInvalid(icon, nameDiv);
 		} else {
 			_setIconAndInputValid(icon, nameDiv);
@@ -53,18 +53,19 @@ const formValidation = (() => {
 	}
 	function checkMessage() {
 		const icon = message.parentNode.querySelector('i');
-		const errMesage = message.parentNode.querySelector('.error');
-		const nameDiv = name.parentNode;
+		const errMessage = message.parentNode.querySelector('.error');
+		const messageDiv = message.parentNode;
 		if (message.value === '') {
-			errMesage.textContent = 'This field is required.';
-			_setIconAndInputInvalid(icon, nameDiv);
-			return;
+			errMessage.textContent = 'This field is required.';
+			_setIconAndInputInvalid(icon, messageDiv);
+		} else {
+			_setIconAndInputValid(icon, messageDiv);
 		}
 	}
 	function _checkAllInputs() {
 		const form = document.querySelector('form');
 		const inputDivs = Array.from(form.querySelectorAll('.inputDiv'));
-		return inputDivs.slice(0, 5).every((input) => input.classList.contains('valid'));
+		return inputDivs.slice(0, 3).every((input) => input.classList.contains('valid'));
 	}
 
 	function checkForm(e) {
@@ -80,7 +81,7 @@ const formValidation = (() => {
 	}
 	name.addEventListener('change', checkName);
 	email.addEventListener('change', checkEmail);
-	message.addEventListener('click', checkMessage);
+	message.addEventListener('change', checkMessage);
 
 	return {
 		checkForm,
