@@ -2,6 +2,7 @@ const formValidation = (() => {
 	const name = document.querySelector('#input-name');
 	const email = document.querySelector('#input-email');
 	const message = document.querySelector('#input-message');
+	const submitBtn = document.querySelector('#submit-btn');
 
 	function _setIconAndInputValid(icon, inputDiv) {
 		inputDiv.classList.remove('invalid');
@@ -67,7 +68,13 @@ const formValidation = (() => {
 		const inputDivs = Array.from(form.querySelectorAll('.inputDiv'));
 		return inputDivs.slice(0, 3).every((input) => input.classList.contains('valid'));
 	}
-
+	function resetForm(form) {
+		form.reset();
+		const inputDivs = Array.from(form.querySelectorAll('.inputDiv'));
+		inputDivs.forEach((inputDiv) => {
+			inputDiv.classList.remove('valid');
+		});
+	}
 	function checkForm(e) {
 		const form = document.querySelector('.form');
 		e.preventDefault();
@@ -76,12 +83,15 @@ const formValidation = (() => {
 		checkMessage();
 		if (_checkAllInputs()) {
 			//todo pozvati emailSender
-			form.reset();
+			//todo resetovati box-shadow
+			resetForm(form);
+			//form.reset();
 		}
 	}
 	name.addEventListener('change', checkName);
 	email.addEventListener('change', checkEmail);
 	message.addEventListener('change', checkMessage);
+	submitBtn.addEventListener('click', checkForm);
 
 	return {
 		checkForm,
