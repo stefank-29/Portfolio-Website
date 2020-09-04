@@ -17,6 +17,5 @@ const emailSender = (() => {
 		sendMail,
 	};
 })();
-// const form = document.querySelector('.form');
-// form.addEventListener('submit', emailSender.sendMail);
+
 export {emailSender};
