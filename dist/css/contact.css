@@ -22,7 +22,18 @@
 	color: #ecf4f5;
 	line-height: 2.7rem;
 }
-
+p.about a {
+	text-decoration: none;
+	color: rgb(207, 35, 35);
+}
+p.about a:hover {
+	text-decoration: underline;
+}
+.about.logos i {
+	font-size: 4rem;
+	margin: 0 1rem;
+}
+/*******form*******/
 .form {
 	width: 80%;
 	display: flex;
