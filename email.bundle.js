@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/emailSender.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,42 +143,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"emailSender\", function() { return emailSender; });\n/* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! emailjs-com */ \"./node_modules/emailjs-com/source/index.js\");\n/* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(emailjs_com__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _apikeys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./apikeys */ \"./src/apikeys.js\");\n\n\n\nvar emailSender = function () {\n  function sendMail(e) {\n    e.preventDefault();\n    emailjs_com__WEBPACK_IMPORTED_MODULE_0___default.a.sendForm('gmail', _apikeys__WEBPACK_IMPORTED_MODULE_1__[\"default\"].TEMPLATE_ID, e.target, _apikeys__WEBPACK_IMPORTED_MODULE_1__[\"default\"].USER_ID).then(function (result) {\n      console.log(result.text);\n    }, function (error) {\n      console.log(error.text);\n    });\n  }\n\n  return {\n    sendMail: sendMail\n  };\n}();\n\nvar form = document.querySelector('.form');\nform.addEventListener('submit', emailSender.sendMail);\n\n\n//# sourceURL=webpack:///./src/emailSender.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shellSessionAnimation */ \"./src/shellSessionAnimation.js\");\n/* harmony import */ var _scrollToDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scrollToDom */ \"./src/scrollToDom.js\");\n/* harmony import */ var _emailSender__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./emailSender */ \"./src/emailSender.js\");\n\n\n\nparticlesJS.load('particles-js', './particles.json', function () {\n  console.log('callback - particles.js config loaded');\n});\nwindow.onload = _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__[\"shellAnimation\"].insertLetter();\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/scrollToDom.js":
-/*!****************************!*\
-  !*** ./src/scrollToDom.js ***!
-  \****************************/
-/*! exports provided: scrollToDom */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"scrollToDom\", function() { return scrollToDom; });\nvar scrollToDom = function () {\n  function scroll() {\n    document.querySelector('#about').scrollIntoView({\n      behavior: 'smooth'\n    });\n  }\n\n  return {\n    scroll: scroll\n  };\n}();\n\nvar headerBtn = document.querySelector('#headerBtn');\nheaderBtn.addEventListener('click', scrollToDom.scroll);\nvar scrollArrows = document.querySelector('#scroll');\nscrollArrows.addEventListener('click', scrollToDom.scroll);\n\n\n//# sourceURL=webpack:///./src/scrollToDom.js?");
-
-/***/ }),
-
-/***/ "./src/shellSessionAnimation.js":
-/*!**************************************!*\
-  !*** ./src/shellSessionAnimation.js ***!
-  \**************************************/
-/*! exports provided: shellAnimation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shellAnimation\", function() { return shellAnimation; });\nvar shellAnimation = function () {\n  var shell = document.querySelector('#shell-text');\n  var text = \"I am skilled with web development languages such as JavaScript, CSS3 and HTML5.\\n\\tCurrently I'm improving my knowledge of React framework. I have experience working with \\n\\tobject-oriented programming languages such as Java and C++,\\n\\tdatabases (SQL, MS SQL, LiveSQL), and industry tools such as (Webpack, Git, Github, ESLint).\";\n  var textArray = text.split('');\n  var timer;\n\n  function insertLetter() {\n    //console.log('a');\n    if (textArray.length > 0) {\n      if (textArray[0] === ' ') {\n        shell.textContent += textArray.shift();\n      }\n\n      shell.textContent += textArray.shift();\n    } else {\n      clearTimeout(timer);\n      return;\n    }\n\n    timer = setTimeout(insertLetter, 10);\n  }\n\n  return {\n    insertLetter: insertLetter\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/shellSessionAnimation.js?");
 
 /***/ })
 
