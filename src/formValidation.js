@@ -1,3 +1,5 @@
+import {emailSender} from './emailSender';
+
 const formValidation = (() => {
 	const name = document.querySelector('#input-name');
 	const email = document.querySelector('#input-email');
@@ -82,10 +84,8 @@ const formValidation = (() => {
 		checkEmail();
 		checkMessage();
 		if (_checkAllInputs()) {
-			//todo pozvati emailSender
-			//todo resetovati box-shadow
+			emailSender.sendMail(form);
 			resetForm(form);
-			//form.reset();
 		}
 	}
 	name.addEventListener('change', checkName);
