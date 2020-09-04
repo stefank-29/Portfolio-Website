@@ -393,18 +393,36 @@
 						</p>
 						<!-- form -->
 						<form class="form" autocomplete="off">
-							<label for="name">Name <sub class="star">*</sub></label>
-							<input type="text" name="name" placeholder="Name" />
-							<label for="email">Email <sub class="star">*</sub></label>
-							<input type="text" name="email" placeholder="Email Address" />
-							<label for="message">Message <sub class="star">*</sub></label>
-							<textarea
-								name="message"
-								id="message"
-								cols="30"
-								rows="7"
-								placeholder="Message"
-							></textarea>
+							<div class="inputDiv">
+								<label for="name">Name <sub class="star">*</sub></label>
+								<input type="text" name="name" id="input-name" placeholder="Name" />
+								<span class="status"><i class="far fa-check-circle"></i></span>
+								<p class="error">Error message</p>
+							</div>
+							<div class="inputDiv">
+								<label for="email">Email <sub class="star">*</sub></label>
+								<input
+									type="text"
+									name="email"
+									id="input-email"
+									placeholder="Email Address"
+								/>
+								<span class="status"><i class="far fa-check-circle"></i></span>
+								<p class="error">Error message</p>
+							</div>
+							<div class="inputDiv">
+								<label for="message">Message <sub class="star">*</sub></label>
+								<textarea
+									name="message"
+									id="input-message"
+									cols="30"
+									rows="7"
+									placeholder="Message"
+								></textarea>
+								<span class="status"><i class="far fa-check-circle"></i></span>
+								<p class="error">Error message</p>
+							</div>
+
 							<input type="submit" name="submit" value="Submit" id="submit-btn" />
 						</form>
 					</div>
