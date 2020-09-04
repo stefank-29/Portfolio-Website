@@ -8,6 +8,7 @@ module.exports = {
 		particles: './src/particles.js',
 		shell: './src/shellSessionAnimation.js',
 		scroll: './src/scrollToDom.js',
+		email: './src/emailSender.js',
 	},
 	output: {
 		filename: '[name].bundle.js',
