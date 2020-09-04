@@ -57,6 +57,17 @@
 .form textarea:focus {
 	box-shadow: 0 0 5px 2px #44bccc;
 }
+.form #submit-btn {
+	margin-top: 2rem;
+	width: 20%;
+	font-size: 2rem;
+	color: #f8fafa;
+	background-color: rgb(207, 35, 35);
+	cursor: pointer;
+}
+.form #submit-btn:hover {
+	background-color: rgb(170, 46, 46);
+}
 
 form textarea {
 	resize: none;
