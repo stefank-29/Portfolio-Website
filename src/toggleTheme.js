@@ -11,6 +11,9 @@ const toggleTheme = (() => {
 	const projectsAbout = document.querySelector('#about-projects');
 	const projectsHeaders = document.querySelectorAll('.project-desc .header');
 	const projectsDesc = document.querySelectorAll('.project-desc .about');
+	const contactAbout = document.querySelectorAll('#contact p.about');
+	const labels = document.querySelectorAll('.form label');
+	const errorMessages = document.querySelectorAll('.inputDiv .error');
 	function toggle() {
 		body.classList.toggle('light');
 		particles.classList.toggle('light');
@@ -32,6 +35,16 @@ const toggleTheme = (() => {
 		});
 		projectsDesc.forEach((desc) => {
 			desc.classList.toggle('light');
+		});
+
+		contactAbout.forEach((contact) => {
+			contact.classList.toggle('light');
+		});
+		labels.forEach((label) => {
+			label.classList.toggle('light');
+		});
+		errorMessages.forEach((error) => {
+			error.classList.toggle('light');
 		});
 	}
 
