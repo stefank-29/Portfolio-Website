@@ -123,3 +123,22 @@
     justify-content: center;
     cursor: pointer;
 }
+
+/********logos********/
+
+#menu-logos {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-logos i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #ecf4f5;
+}
+
+#menu-logos i:hover {
+    color: #44bccccc;
+}

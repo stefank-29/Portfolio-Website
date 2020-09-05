@@ -56,9 +56,11 @@
 }
 
 /*********button***********/
+
 .main-title a {
 	outline: none;
 }
+
 #headerBtn {
 	margin-top: 3rem;
 	padding: 1rem 2.5rem;
@@ -128,8 +130,9 @@
 	width: 1.3rem;
 	background-color: #171a2e;
 }
+
 ::-webkit-scrollbar-thumb {
 	border-radius: 5px;
 	height: 20rem;
-	background: linear-gradient(to bottom, transparent, #44bcccee);
+	background: linear-gradient(to bottom, transparent, #b9c2c4ee);
 }
