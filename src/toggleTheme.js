@@ -6,6 +6,8 @@ const toggleTheme = (() => {
 	const particles = document.querySelector('#particles-js');
 	const sectionHeaders = document.querySelectorAll('.section-header');
 	const dotsP = document.querySelectorAll('.dots');
+	const aboutP = document.querySelectorAll('.about-p');
+	const logos = document.querySelectorAll('.logo');
 	function toggle() {
 		body.classList.toggle('light');
 		particles.classList.toggle('light');
@@ -14,6 +16,12 @@ const toggleTheme = (() => {
 		});
 		dotsP.forEach((dot) => {
 			dot.classList.toggle('light');
+		});
+		aboutP.forEach((about) => {
+			about.classList.toggle('light');
+		});
+		logos.forEach((logo) => {
+			logo.classList.toggle('light');
 		});
 	}
 
