@@ -8,6 +8,9 @@ const toggleTheme = (() => {
 	const dotsP = document.querySelectorAll('.dots');
 	const aboutP = document.querySelectorAll('.about-p');
 	const logos = document.querySelectorAll('.logo');
+	const projectsAbout = document.querySelector('#about-projects');
+	const projectsHeaders = document.querySelectorAll('.project-desc .header');
+	const projectsDesc = document.querySelectorAll('.project-desc .about');
 	function toggle() {
 		body.classList.toggle('light');
 		particles.classList.toggle('light');
@@ -22,6 +25,13 @@ const toggleTheme = (() => {
 		});
 		logos.forEach((logo) => {
 			logo.classList.toggle('light');
+		});
+		projectsAbout.classList.toggle('light');
+		projectsHeaders.forEach((header) => {
+			header.classList.toggle('light');
+		});
+		projectsDesc.forEach((desc) => {
+			desc.classList.toggle('light');
 		});
 	}
 
