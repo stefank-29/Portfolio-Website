@@ -16,6 +16,11 @@
 	font-family: 'Alata', sans-serif;
 	font-size: 4rem;
 	color: #ecf4f5;
+	transition: color 0.5s ease-in-out;
+}
+
+.section-header.light {
+	color: #232323;
 }
 
 /********dots***********/
@@ -28,6 +33,11 @@ p.dots {
 	padding: 0;
 	font-size: 1rem;
 	color: #ecf4f5;
+	transition: color 0.5s ease-in-out;
+}
+
+p.dots.light {
+	color: #232323;
 }
 
 p.dots * {
@@ -139,8 +149,7 @@ p.dots * {
 
 @font-face {
 	font-family: 'Menlo';
-	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'),
-		url('/webfontkit/menlo-regular-webfont.woff') format('woff');
+	src: url('/webfontkit/menlo-regular-webfont.woff2') format('woff2'), url('/webfontkit/menlo-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
