@@ -3,7 +3,7 @@
     right: 0;
     top: 0;
     height: 100vh;
-    width: 23rem;
+    width: 22rem;
     background-color: #0e0f18;
     z-index: 5;
     display: flex;
@@ -100,4 +100,21 @@
     color: #f39c12;
     margin-left: 0.3rem;
     font-size: 1.2rem;
+}
+
+/*********bars********/
+
+#bars {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 2rem;
+    left: -6rem;
+    background-color: #222d77aa;
+    font-size: 1.7rem;
+    color: #ecf4f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
