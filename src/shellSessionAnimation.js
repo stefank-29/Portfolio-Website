@@ -17,7 +17,7 @@ const shellAnimation = (() => {
 			clearTimeout(timer);
 			return;
 		}
-		timer = setTimeout(insertLetter, 10);
+		timer = setTimeout(insertLetter, 30);
 	}
 	return {
 		insertLetter,
