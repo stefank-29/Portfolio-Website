@@ -8,7 +8,7 @@ canvas {
 #particles-js {
 	position: absolute;
 	width: 100%;
-	height: calc(550vh + 3.7rem);
+	height: calc(530vh + 3.7rem);
 	/* podesiti koliko treba da bude minimalna visina*/
 	background-color: #171a2e;
 	/* background-color: #ece8e6; */
@@ -18,5 +18,6 @@ canvas {
 }
 
 #particles-js.light {
+	/* background-color: rgb(238, 229, 229); */
 	background-color: rgb(243, 243, 243);
 }
