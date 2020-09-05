@@ -80,7 +80,6 @@ p.about a:hover {
 	border: none;
 	outline: none;
 	margin: 0.5rem auto;
-	/* background-color: #44bccc; */
 }
 
 .form input:focus, .form textarea:focus {
