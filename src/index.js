@@ -24,6 +24,9 @@ window.onload = shellAnimation.insertLetter();
 //todo linkovi za linkedin i facebook
 //todo strelica za top of page(^^)
 
+//todo README
+//todo okaciti na TOP
+
 //*kasnije
 
 //?responsive
