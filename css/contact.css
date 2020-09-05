@@ -21,19 +21,29 @@
 	font-size: 2rem;
 	color: #ecf4f5;
 	line-height: 2.7rem;
+	transition: color 0.5s ease-in-out;
 }
+
+#contact p.about.light {
+	color: #232323;
+}
+
 p.about a {
 	text-decoration: none;
 	color: rgb(207, 35, 35);
 }
+
 p.about a:hover {
 	text-decoration: underline;
 }
+
 .about.logos i {
 	font-size: 4rem;
 	margin: 0 1rem;
 }
+
 /*******form*******/
+
 .form {
 	width: 80%;
 	display: flex;
@@ -41,19 +51,26 @@ p.about a:hover {
 	justify-content: flex-start;
 	align-items: center;
 }
+
 .form label {
 	font-size: 2rem;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	margin: 1rem auto 0rem;
 	color: #ecf4f5;
+	transition: color 0.5s ease-in-out;
 }
+
+.form label.light {
+	color: #232323;
+}
+
 .form .star {
 	color: rgb(207, 35, 35);
 	font-size: 3rem;
 }
-.form input,
-.form textarea {
+
+.form input, .form textarea {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 1.2rem;
@@ -63,11 +80,13 @@ p.about a:hover {
 	border: none;
 	outline: none;
 	margin: 0.5rem auto;
+	/* background-color: #44bccc; */
 }
-.form input:focus,
-.form textarea:focus {
+
+.form input:focus, .form textarea:focus {
 	box-shadow: inset 0 0 3px 1px #44bccc;
 }
+
 .form #submit-btn {
 	margin-top: 2rem;
 	width: 13rem;
@@ -81,9 +100,11 @@ p.about a:hover {
 .form #submit-btn:hover {
 	background-color: rgb(170, 46, 46);
 }
+
 .form #submit-btn:focus {
 	box-shadow: none;
 }
+
 form textarea {
 	resize: none;
 }
@@ -98,14 +119,14 @@ form textarea {
 	padding-bottom: 2rem;
 }
 
-.inputDiv.valid input,
-.inputDiv.valid textarea {
+.inputDiv.valid input, .inputDiv.valid textarea {
 	box-shadow: inset 0 0 3px 1px rgb(10, 201, 10);
 }
-.inputDiv.invalid input,
-.inputDiv.invalid textarea {
+
+.inputDiv.invalid input, .inputDiv.invalid textarea {
 	box-shadow: inset 0 0 3px 1px rgb(206, 18, 18);
 }
+
 .inputDiv .error {
 	position: absolute;
 	bottom: -1.4rem;
@@ -116,6 +137,11 @@ form textarea {
 	font-size: 1.7rem;
 	font-family: 'Raleway', sans-serif;
 	display: none;
+	transition: color 0.5s ease-in-out;
+}
+
+.inputDiv .error.light {
+	color: #232323;
 }
 
 .inputDiv .status {
@@ -126,13 +152,15 @@ form textarea {
 	top: 53%;
 	display: none;
 }
+
 #message .status {
 	top: 25%;
 }
-.inputDiv.valid .status,
-.inputDiv.invalid .status {
+
+.inputDiv.valid .status, .inputDiv.invalid .status {
 	display: inline-block;
 }
+
 .inputDiv.invalid .error {
 	display: inline-block;
 }
