@@ -14,4 +14,9 @@ canvas {
 	/* background-color: #ece8e6; */
 	/* background-color: #232741; */
 	/* background-color: #171a2e; ovo je pozadina */
+	transition: background 0.5s ease-in-out;
+}
+
+#particles-js.light {
+	background-color: rgb(243, 243, 243);
 }
