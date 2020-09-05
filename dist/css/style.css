@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+*, *::after, *::before {
 	box-sizing: border-box;
 }
 
@@ -33,10 +31,12 @@ body {
 	position: absolute;
 	padding-bottom: 3.5rem;
 }
+
 #site-content {
 	width: 100%;
 	min-height: 100vh;
 }
+
 /**************footer*****************/
 
 footer div {
