@@ -63,11 +63,21 @@ p.dots * {
 	font-size: 2rem;
 	color: #ecf4f5;
 	line-height: 3rem;
+	transition: color 0.5s ease-in-out;
+}
+
+.about-p.light {
+	color: #232323;
 }
 
 .logo {
 	color: #ecf4f5;
 	font-size: 2.3rem;
+	transition: color 0.5s ease-in-out;
+}
+
+.logo.light {
+	color: #232323;
 }
 
 .logo:hover {
