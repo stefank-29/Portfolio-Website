@@ -12,6 +12,11 @@
     justify-content: flex-start;
     font-family: 'Raleway', sans-serif;
     padding: 2rem 2rem;
+    transition: transform 0.3s linear;
+}
+
+.menu.hide {
+    transform: translateX(22rem);
 }
 
 .menu .header {

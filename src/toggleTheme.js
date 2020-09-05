@@ -2,6 +2,7 @@ import {doc} from 'prettier';
 
 const toggleTheme = (() => {
 	const checkbox = document.querySelector('#checkbox');
+
 	const body = document.querySelector('body');
 	const particles = document.querySelector('#particles-js');
 	const sectionHeaders = document.querySelectorAll('.section-header');
@@ -14,6 +15,7 @@ const toggleTheme = (() => {
 	const contactAbout = document.querySelectorAll('#contact p.about');
 	const labels = document.querySelectorAll('.form label');
 	const errorMessages = document.querySelectorAll('.inputDiv .error');
+
 	function toggle() {
 		body.classList.toggle('light');
 		particles.classList.toggle('light');
