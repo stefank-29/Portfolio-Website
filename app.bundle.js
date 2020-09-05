@@ -188,7 +188,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shellSessionAnimation */ \"./src/shellSessionAnimation.js\");\n/* harmony import */ var _scrollToDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scrollToDom */ \"./src/scrollToDom.js\");\n/* harmony import */ var _emailSender__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./emailSender */ \"./src/emailSender.js\");\n/* harmony import */ var _formValidation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./formValidation */ \"./src/formValidation.js\");\n/* harmony import */ var _toggleTheme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./toggleTheme */ \"./src/toggleTheme.js\");\n\n\n\n\n\nparticlesJS.load('particles-js', './particles.json', function () {\n  console.log('callback - particles.js config loaded');\n});\nwindow.onload = _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__[\"shellAnimation\"].insertLetter(); //?menu\n//todo menu sa desne strane(moze da se minimizira)\n//?pozadina\n//todo dark/lighth tema(toggle light class)\n//todo podeliti particles na about i contact(vise tackica)\n//?content\n//todo ucitavanje kontenta kako skrolujem(AOS biblioteka)\n//?footer\n//todo visi\n//todo linkovi za linkedin i facebook\n//todo strelica za top of page(^^)\n//todo README\n//todo okaciti na TOP\n//*kasnije\n//?responsive\n//todo napraviti da bude responsive\n//?hosting\n//todo freedom\n//todo github pages + custom domain\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shellSessionAnimation */ \"./src/shellSessionAnimation.js\");\n/* harmony import */ var _scrollToDom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scrollToDom */ \"./src/scrollToDom.js\");\n/* harmony import */ var _emailSender__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./emailSender */ \"./src/emailSender.js\");\n/* harmony import */ var _formValidation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./formValidation */ \"./src/formValidation.js\");\n/* harmony import */ var _toggleTheme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./toggleTheme */ \"./src/toggleTheme.js\");\n/* harmony import */ var _toggleMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./toggleMenu */ \"./src/toggleMenu.js\");\n\n\n\n\n\n\nparticlesJS.load('particles-js', './particles.json', function () {\n  console.log('callback - particles.js config loaded');\n});\nwindow.onload = _shellSessionAnimation__WEBPACK_IMPORTED_MODULE_0__[\"shellAnimation\"].insertLetter(); //?menu\n//todo menu sa desne strane(moze da se minimizira)\n//?pozadina\n//todo dark/lighth tema(toggle light class)\n//todo podeliti particles na about i contact(vise tackica)\n//?content\n//todo ucitavanje kontenta kako skrolujem(AOS biblioteka)\n//?footer\n//todo visi\n//todo linkovi za linkedin i facebook\n//todo strelica za top of page(^^)\n//todo README\n//todo okaciti na TOP\n//*kasnije\n//?responsive\n//todo napraviti da bude responsive\n//?hosting\n//todo freedom\n//todo github pages + custom domain\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -213,6 +213,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shellAnimation\", function() { return shellAnimation; });\nvar shellAnimation = function () {\n  var shell = document.querySelector('#shell-text');\n  var text = \"I am skilled with web development languages such as JavaScript, CSS3 and HTML5.\\n\\tCurrently I'm improving my knowledge of React framework. I have experience working with \\n\\tobject-oriented programming languages such as Java and C++,\\n\\tdatabases (SQL, MS SQL, LiveSQL), and industry tools such as (Webpack, Git, Github, ESLint).\";\n  var textArray = text.split('');\n  var timer;\n\n  function insertLetter() {\n    //console.log('a');\n    if (textArray.length > 0) {\n      if (textArray[0] === ' ') {\n        shell.textContent += textArray.shift();\n      }\n\n      shell.textContent += textArray.shift();\n    } else {\n      clearTimeout(timer);\n      return;\n    }\n\n    timer = setTimeout(insertLetter, 10);\n  }\n\n  return {\n    insertLetter: insertLetter\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/shellSessionAnimation.js?");
+
+/***/ }),
+
+/***/ "./src/toggleMenu.js":
+/*!***************************!*\
+  !*** ./src/toggleMenu.js ***!
+  \***************************/
+/*! exports provided: toggleMenu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toggleMenu\", function() { return toggleMenu; });\nvar toggleMenu = function () {\n  var bars = document.querySelector('#bars');\n  var menu = document.querySelector('.menu');\n\n  function toggle() {\n    menu.classList.toggle('hide');\n  }\n\n  bars.addEventListener('click', toggle);\n  return {\n    toggle: toggle\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/toggleMenu.js?");
 
 /***/ }),
 
