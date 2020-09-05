@@ -14,6 +14,11 @@
 	font-size: 2rem;
 	color: #ecf4f5;
 	line-height: 3rem;
+	transition: color 0.5s ease-in-out;
+}
+
+#about-projects.light {
+	color: #232323;
 }
 
 /************project*************/
@@ -76,15 +81,26 @@
 	margin: 0 1rem;
 	padding: 0rem 0rem 0.2rem;
 	border-bottom: 2px solid #ecf4f5;
+	transition: all 0.5s ease-in-out;
 }
 
-.project-desc p {
+.project-desc .header.light {
+	color: #232323;
+	border-bottom: 2px solid #232323;
+}
+
+.project-desc .about {
 	width: 100%;
 	margin: 2rem 0rem;
 	padding: 0 1rem;
 	font-size: 1.7rem;
 	font-family: 'Raleway', sans-serif;
 	color: #ecf4f5;
+	transition: color 0.5s ease-in-out;
+}
+
+.project-desc .about.light {
+	color: #232323;
 }
 
 .list-dot {
