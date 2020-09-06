@@ -9,6 +9,7 @@ module.exports = {
 		shell: './src/shellSessionAnimation.js',
 		scroll: './src/scrollToDom.js',
 		email: './src/emailSender.js',
+		aos: './src/animateOnScroll.js',
 	},
 	output: {
 		filename: '[name].bundle.js',
