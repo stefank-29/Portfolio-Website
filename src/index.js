@@ -15,9 +15,6 @@ AOS.init();
 
 window.onload = shellAnimation.insertLetter();
 
-//?content
-//todo ucitavanje kontenta kako skrolujem(AOS biblioteka)
-
 //todo README
 //todo okaciti na TOP
 
