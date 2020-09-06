@@ -28,7 +28,7 @@ body.light {
 	/* min-height: calc(100vh + 3.6rem); */
 	min-height: 100vh;
 	min-width: 100vw;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 #content {
@@ -39,6 +39,7 @@ body.light {
 #site-content {
 	width: 100%;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 /**************footer*****************/
@@ -75,3 +76,9 @@ footer a:hover {
 
 /*rgba(39, 131, 236, 0.3);
 rgba(236, 81, 81, 0.3)*/
+
+/*********arrow-up*********/
+
+#arrow-up {
+	position: absolute;
+}
