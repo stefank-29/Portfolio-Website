@@ -15,9 +15,6 @@ AOS.init();
 
 window.onload = shellAnimation.insertLetter();
 
-//todo README
-//todo okaciti na TOP
-
 //*kasnije
 
 //?responsive
