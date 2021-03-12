@@ -1,9 +1,8 @@
 const shellAnimation = (() => {
 	const shell = document.querySelector('#shell-text');
-	const text = `I am skilled with web development languages such as JavaScript, CSS3 and HTML5.
-	Currently I'm improving my knowledge of React framework. I have experience working with 
-	object-oriented programming languages such as Java and C++,
-	databases (SQL, MS SQL, LiveSQL), and industry tools such as (Webpack, Git, Github, ESLint).`;
+	const text = `I am skilled with web development languages and frameworks such as JavaScript, React.js, Vue.js, Node.js,
+	Express.js, Keystone.js, GraphQL, CSS3, HTML5 etc. Also, have experience working with object-oriented programming languages such as
+	Python, Java and C++, databases (MongoDB, MySQL), and industry tools such as (Webpack, Git, Github, ESLint).`;
 	const textArray = text.split('');
 	let timer;
 	function insertLetter() {

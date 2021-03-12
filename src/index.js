@@ -15,11 +15,5 @@ AOS.init();
 
 window.onload = shellAnimation.insertLetter();
 
-//*kasnije
-
 //?responsive
 //todo napraviti da bude responsive
-
-//?hosting
-//todo freedom
-//todo github pages + custom domain
