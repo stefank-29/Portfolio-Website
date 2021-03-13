@@ -81,21 +81,18 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/shellSessionAnimation.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/*!***************************!*\
+  !*** multi build ./dist/ ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./src/shellSessionAnimation.js":
-/*!**************************************!*\
-  !*** ./src/shellSessionAnimation.js ***!
-  \**************************************/
-/*! exports provided: shellAnimation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shellAnimation\", function() { return shellAnimation; });\nvar shellAnimation = function () {\n  var shell = document.querySelector('#shell-text');\n  var text = \"I am skilled with web development languages and frameworks such as JavaScript, React.js, Vue.js, Node.js,\\n\\tExpress.js, Keystone.js, GraphQL, CSS3, HTML5 etc. Also, have experience working with object-oriented programming languages such as\\n\\tPython, Java and C++, databases (MongoDB, MySQL), and industry tools such as (Webpack, Git, Github, ESLint). \";\n  var textArray = text.split('');\n  var timer;\n\n  function insertLetter() {\n    //console.log('a');\n    if (textArray.length > 0) {\n      if (textArray[0] === ' ') {\n        shell.textContent += textArray.shift();\n      }\n\n      shell.textContent += textArray.shift();\n    } else {\n      clearTimeout(timer);\n      return;\n    }\n\n    timer = setTimeout(insertLetter, 35);\n  }\n\n  return {\n    insertLetter: insertLetter\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/shellSessionAnimation.js?");
+eval("!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'build'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module '/home/stefan/the_odin_project/Portfolio-Website/dist/'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n//# sourceURL=webpack:///multi_build_./dist/?");
 
 /***/ })
-
-/******/ });
+/******/ ]);
